@@ -14,7 +14,7 @@ for resource in resources:
     if resource.tabular:
         df = pd.read_csv(resource.descriptor['path'])
         df.rename(columns={'Class_number_of_rings':'Rings'}, inplace=True)
-# print(data.head())
+# print(df.head())
 
 
 """ reading data from a local file """
